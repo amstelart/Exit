@@ -9,5 +9,135 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  
+
+}
+
+.contacts-box {
+  @include row;
+  margin-bottom: 55px;
+
+  &__content {
+    @include col();
+    @include col(lg, 8);
+  }
+
+  &__feedback {
+    @include col();
+    @include col(lg, 4);
+  }
+
+  &__head {
+    max-width: 656px;
+    margin-bottom: 55px;
+  }
+
+  &__title {
+    color: $font-color-title;
+    margin: 0 0 12px 0;
+  }
+
+  &__caption {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.contacts-box-info {
+
+  @include row;
+  justify-content: space-between;
+
+  &__col {
+    @include col();
+    @include col(lg, 5);
+  }
+
+  &__title {
+    color: $font-color-title;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 55px;
+  }
+
+  &__part {
+    margin-bottom: 55px;
+  }
+
+  &__email {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: underline;
+    color: $main-color;
+    transition: color $transition-time;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $main-color-2;
+    }
+  }
+
+  &__adr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.props-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+
+  &__col {
+    display: flex;
+    padding: 12px 0;
+
+    &:not(:first-child) {
+      border-top: 1px solid #E5E8EC;
+    }
+  }
+
+  &__title {
+    color: $font-color-text-light;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    flex-shrink: 0;
+    min-width: 64px;
+    margin-right: 24px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  &__download {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      span {
+        text-decoration: none;
+      }
+    }
+
+    svg {
+      flex-shrink: 0;
+      margin-right: 8px;
+    }
+
+    span {
+      color: $main-color;
+      text-decoration: underline;
+    }
+  }
 }
