@@ -1,0 +1,29 @@
+// В этом файле должны быть стили для БЭМ-блока download-link, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.download-link {
+
+  $block-name:                &; // #{$block-name}__element
+
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    span {
+      text-decoration: none;
+    }
+  }
+
+  svg {
+    flex-shrink: 0;
+    margin-right: 8px;
+  }
+
+  span {
+    color: $main-color;
+    text-decoration: underline;
+  }
+}

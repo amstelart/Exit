@@ -8,8 +8,6 @@
 
   padding-top: 50px;
   padding-bottom: 50px;
-
-
 }
 
 .contacts-box {
@@ -119,25 +117,6 @@
   }
 
   &__download {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
 
-    &:hover,
-    &:focus {
-      span {
-        text-decoration: none;
-      }
-    }
-
-    svg {
-      flex-shrink: 0;
-      margin-right: 8px;
-    }
-
-    span {
-      color: $main-color;
-      text-decoration: underline;
-    }
   }
 }

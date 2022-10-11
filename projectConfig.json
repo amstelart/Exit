@@ -85,7 +85,11 @@
     "sidebar-layout": [],
     "testimonials-card": [],
     "testimonials-group": [],
-    "sidebar-nav": []
+    "sidebar-nav": [],
+    "documents-page": [],
+    "documents-group": [],
+    "documents-card": [],
+    "download-link": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
