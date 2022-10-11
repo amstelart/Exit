@@ -80,7 +80,12 @@
     "portfolio-page": [],
     "case-page": [],
     "feedback-box": [],
-    "contacts-page": []
+    "contacts-page": [],
+    "testimonials-page": [],
+    "sidebar-layout": [],
+    "testimonials-card": [],
+    "testimonials-group": [],
+    "sidebar-nav": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

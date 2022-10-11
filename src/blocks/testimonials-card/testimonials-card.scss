@@ -1,0 +1,64 @@
+// В этом файле должны быть стили для БЭМ-блока testimonials-card, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.testimonials-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+
+  &__img {
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+  &__img-box {
+    background-color: #fff;
+    padding: 8px;
+    box-shadow: 0px 16px 48px rgba(229, 232, 236, 0.8);
+
+    img {
+      display: block;
+    }
+  }
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__logo {
+    margin-bottom: 15px;
+  }
+  &__title {
+    color: $font-color-title;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  &__case {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #989EAC;
+    margin-bottom: 30px;
+
+    p {
+      margin: 3px 0;
+    }
+
+    a {
+      color: $main-color;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,35 @@
+// В этом файле должны быть стили для БЭМ-блока sidebar-layout, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.sidebar-layout {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    @include row;
+  }
+
+  &__sidebar {
+    @include col();
+    @include col(lg, 3);
+  }
+
+  &__content {
+    @include col();
+    @include col(lg, 9);
+    padding-left: 35px !important;
+  }
+
+  &__head {
+    margin-bottom: 55px;
+  }
+
+  &__title {
+    color: $font-color-title;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;    
+    margin: 0;
+  }
+}
