@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="top-nav-box">
+          <div class="container">
+            <ul class="top-nav">
+              <li class="top-nav__item"><a class="top-nav__link" href="#">О компании</a></li>
+              <li class="top-nav__item"><a class="top-nav__link" href="#">Новости</a></li>
+              <li class="top-nav__item"><a class="top-nav__link" href="#">Партнерам</a></li>
+              <li class="top-nav__item"><a class="top-nav__link" href="#">Отзывы</a></li>
+              <li class="top-nav__item"><a class="top-nav__link" href="#">Документы</a></li>
+              <li class="top-nav__item"><a class="top-nav__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-box">
+          <div class="container">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt></a>
+            <a href="#" class="btn btn--catalog">Каталог оборудования</a>
+            <ul class="header-nav">
+              <li class="header-nav__item"><a href="#" class="header-nav__link">Наши услуги</a></li>
+              <li class="header-nav__item"><a href="#" class="header-nav__link">Выполненные проекты</a></li>
+            </ul>
+            <div class="call-box">
+              <a href="tel:+73517009080" class="call-box__num">+7(351)700-90-80</a>
+              <a href="#" class="call-box__link">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main role="main" class="contacts-page">
+        <div class="container">
+          <div class="contacts-box">
+            <div class="contacts-box__content">
+              <div class="contacts-box__head">
+                <h1 class="contacts-box__title">Контакты</h1>
+                <div class="contacts-box__caption">
+                  <p>Комплексное техническое оснащении объектов для проведения культурно-зрелищных мероприятий</p>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-box__feedback">
+              <form action class="feedback-box__form">
+                <label class="field-text">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" placeholder="Имя" id name>
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="tel" placeholder="Телефон" id name>
+                  </span>
+                </label>
+                <div class="field-actions">
+                  <button class="btn">Бесплатная консультация</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="container">
+          <div class="page-footer__box">
+            <div class="page-footer__item">
+              <div><a href="#" class="logo"><img src="img/logo-light.svg" alt></a></div>
+              <div class="page-footer-copyright">
+                <p>© 2022, ООО «Эксис»</p>
+                <p>Комплексное техническое оснащении объектов для проведения культурно-зрелищных мероприятий</p>
+              </div>
+              <div class="footer-links">
+                <div class="footer-links-rf">
+                  <img src="img/rf.png" alt>
+                </div>
+                <div class="footer-links-text">
+                  <p><a href="#">Политика конфиденциальности</a></p>
+                  <p><a href="#">Карта сайта</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="page-footer__item">
+              <div class="call-box">
+                <a href="tel:+73517009080" class="call-box__num">+7(351)700-90-80</a>
+                <a href="#" class="call-box__link">Заказать звонок</a>
+              </div>
+              <p>454021 г. Челябинск, <br>ул. Чичерина 37Б офис 005</p>
+              <div class="social">
+                <div class="social__item">
+                  <a href="#" target="_blank" class="social__link">
+                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_108_1705)">
+                      <path d="M14.1667 1.66602H5.83332C3.53214 1.66602 1.66666 3.5315 1.66666 5.83268V14.166C1.66666 16.4672 3.53214 18.3327 5.83332 18.3327H14.1667C16.4678 18.3327 18.3333 16.4672 18.3333 14.166V5.83268C18.3333 3.5315 16.4678 1.66602 14.1667 1.66602Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M13.3333 9.47525C13.4362 10.1688 13.3177 10.8771 12.9948 11.4994C12.6719 12.1218 12.161 12.6264 11.5347 12.9416C10.9084 13.2569 10.1987 13.3666 9.5065 13.2552C8.81428 13.1438 8.17481 12.817 7.67904 12.3212C7.18327 11.8255 6.85645 11.186 6.74507 10.4938C6.63368 9.80154 6.7434 9.09183 7.05862 8.46556C7.37383 7.8393 7.8785 7.32837 8.50083 7.00545C9.12316 6.68254 9.83147 6.56407 10.525 6.66692C11.2324 6.77182 11.8874 7.10147 12.3931 7.60717C12.8988 8.11288 13.2284 8.76782 13.3333 9.47525Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14.5833 5.41602H14.5925" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clippath id="clip0_108_1705">
+                      <rect width="20" height="20" fill="white"/>
+                      </clippath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" target="_blank" class="social__link">
+                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 1.66602H12.5C11.3949 1.66602 10.3351 2.105 9.55373 2.8864C8.77233 3.66781 8.33334 4.72761 8.33334 5.83268V8.33268H5.83334V11.666H8.33334V18.3327H11.6667V11.666H14.1667L15 8.33268H11.6667V5.83268C11.6667 5.61167 11.7545 5.39971 11.9108 5.24343C12.067 5.08715 12.279 4.99935 12.5 4.99935H15V1.66602Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" target="_blank" class="social__link">
+                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.7834 5.35065C18.6844 4.95516 18.4828 4.59279 18.1989 4.30016C17.915 4.00752 17.559 3.79497 17.1667 3.68398C15.7334 3.33398 10 3.33398 10 3.33398C10 3.33398 4.2667 3.33398 2.83336 3.71732C2.44107 3.8283 2.08501 4.04085 1.80115 4.33349C1.51729 4.62613 1.31569 4.98849 1.2167 5.38398C0.954374 6.83861 0.826059 8.31424 0.833362 9.79232C0.824012 11.2815 0.952335 12.7684 1.2167 14.234C1.32583 14.6172 1.53195 14.9658 1.81515 15.2461C2.09835 15.5263 2.44905 15.7288 2.83336 15.834C4.2667 16.2173 10 16.2173 10 16.2173C10 16.2173 15.7334 16.2173 17.1667 15.834C17.559 15.723 17.915 15.5104 18.1989 15.2178C18.4828 14.9252 18.6844 14.5628 18.7834 14.1673C19.0437 12.7236 19.172 11.2593 19.1667 9.79232C19.176 8.30311 19.0477 6.81623 18.7834 5.35065V5.35065Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M8.125 12.5164L12.9167 9.79141L8.125 7.06641V12.5164Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="metrik-counter">
+                <div class="metrik-counter__item"><img src="img/metrik-counter-01.png" alt></div>
+                <div class="metrik-counter__item"><img src="img/metrik-counter-02.png" alt></div>
+              </div>
+            </div>
+            <div class="page-footer__item">
+              <ul class="fnav">
+                <li class="fnav__item"><a class="fnav__link" href="#">Наши услуги</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">Выполненные проекты</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">О компании</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">Новости</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">Партнерам</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">Отзывы</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">Документы</a></li>
+              </ul>
+            </div>
+            <div class="page-footer__item">
+              <ul class="fcatalog">
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Световое оборудование</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Звуковое оборудование</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Видеопроекционное оборудование и светодиодные экраны</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Оснащение конференц-залов</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Механика и одежда сцены</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Кресла для залов</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Мультимедиа</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
