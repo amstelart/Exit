@@ -1,0 +1,40 @@
+// В этом файле должны быть стили для БЭМ-блока top-nav, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.top-nav-box {
+  padding: 12px 0;
+}
+
+.top-nav {
+
+  $block-name:                &; // #{$block-name}__element
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    display: inline-block;
+    margin: 0 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $font-color-text-light;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    transition: color $transition-time;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+  }
+}

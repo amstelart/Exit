@@ -1,0 +1,31 @@
+// В этом файле должны быть стили для БЭМ-блока call-box, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.call-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__num {
+    text-decoration: none;
+    color: $font-color-title;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  &__link {
+    color: $main-color;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
