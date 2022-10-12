@@ -9,11 +9,11 @@ $font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubun
 $font-family--headings:       $font-family !default;
 $font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace !default;
 
-$font-size:                   14px !default;
-$font-size--h1:               2.25em !default;
-$font-size--h2:               1.875em !default;
-$font-size--h3:               1.5em !default;
-$font-size--h4:               1.25em !default;
+$font-size:                   16px;
+$font-size--h1:               48px;
+$font-size--h2:               40px;
+$font-size--h3:               32px;
+$font-size--h4:               24px;
 $font-size--h5:               1em !default;
 $font-size--h6:               1em !default;
 $font-size--small:            0.75em !default;
@@ -180,7 +180,7 @@ h6 {
   font-family: $font-family--headings;
   font-weight: 700;
   line-height: $line-height;
-  color: currentColor;
+  color: $font-color-title;
 }
 
 // .h1,
@@ -206,21 +206,25 @@ h6 {
 // .h1,
 h1 {
   font-size: $font-size--h1;
+  line-height: 56px;
 }
 
 // .h2,
 h2 {
   font-size: $font-size--h2;
+  line-height: 52px;
 }
 
 // .h3,
 h3 {
   font-size: $font-size--h3;
+  line-height: 40px;
 }
 
 // .h4,
 h4 {
   font-size: $font-size--h4;
+  line-height: 32px;
 }
 
 // .h5,
@@ -242,8 +246,9 @@ blockquote,
 pre,
 address,
 figure {
-  margin-top: ($line-height / 2);
-  margin-bottom: ($line-height / 2);
+  margin-top: 24px;
+  margin-bottom: 24px;
+  line-height: 28px;
 }
 
 address {
@@ -316,9 +321,31 @@ abbr[title] {
 }
 
 blockquote {
-  padding: 0;
+  padding: 0 0 0 36px;
+  overflow: hidden;
   margin-left: 0;
   margin-right: 0;
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: $font-family--headings;
+
+  p {
+    line-height: 32px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    height: 100%;
+    background: #BEDBF3;
+    border-radius: 2px;
+  }
 }
 
 code,
@@ -351,4 +378,56 @@ pre {
   width: 100%;
   overflow-x: auto;
   tab-size: 2;
+}
+
+
+.custom-dot-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    position: relative;
+    padding-left: 36px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 10px;
+      height: 10px;
+      background: #BEDBF3;
+      border-radius: 50%;
+    }
+  }
+}
+
+.custom-num-list {
+  list-style: none;
+  padding: 0;
+  counter-reset: num-list-counter;
+
+  li {
+    counter-increment: num-list-counter;
+    position: relative;
+    padding-left: 36px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:before {
+      content: counter(num-list-counter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #BEDBF3;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
 }

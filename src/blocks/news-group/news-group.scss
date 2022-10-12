@@ -1,0 +1,17 @@
+// В этом файле должны быть стили для БЭМ-блока news-group, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.news-group {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+    border-bottom: 1px solid #E5E8EC;
+    padding-bottom: 55px;
+
+    &:not(:first-child) {
+      margin-top: 55px;
+    }
+  }
+}

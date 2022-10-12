@@ -89,7 +89,11 @@
     "documents-page": [],
     "documents-group": [],
     "documents-card": [],
-    "download-link": []
+    "download-link": [],
+    "news-page": [],
+    "news-group": [],
+    "news-card": [],
+    "text-page": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
