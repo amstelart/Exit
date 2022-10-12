@@ -251,6 +251,18 @@ figure {
   line-height: 28px;
 }
 
+a {
+  color: $main-color;
+  text-decoration: underline;
+  transition: color $transition-time;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $main-color-2;
+  }
+}
+
 address {
   font-style: normal;
 }

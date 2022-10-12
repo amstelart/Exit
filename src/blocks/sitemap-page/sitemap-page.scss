@@ -1,0 +1,11 @@
+// В этом файле должны быть стили для БЭМ-блока sitemap-page, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.sitemap-page {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-top: 55px;
+  padding-bottom: 55px;
+}

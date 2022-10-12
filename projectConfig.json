@@ -93,7 +93,9 @@
     "news-page": [],
     "news-group": [],
     "news-card": [],
-    "text-page": []
+    "text-page": [],
+    "sitemap-page": [],
+    "sitemap-box": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

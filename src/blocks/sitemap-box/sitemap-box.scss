@@ -1,0 +1,23 @@
+// В этом файле должны быть стили для БЭМ-блока sitemap-box, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.sitemap-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    @include row;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      margin-bottom: 50px;
+    }
+  }
+
+  &__col {
+    @include col();
+    @include col(lg, 4);
+    margin-bottom: 50px;
+  }
+}
