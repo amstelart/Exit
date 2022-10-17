@@ -17,6 +17,10 @@
   &__info {
     @include col();
     @include col(lg, 8);
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 30px;
+    }
   }
 
   &__stats {
@@ -38,6 +42,18 @@
     line-height: 32px;
     margin-bottom: 24px;
     max-width: 840px;
+
+    @media (max-width: ($screen-xxl - 1)) {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 15px 0;
+    }
+    
+    @media (max-width: $screen-md) {
+      font-size: 16px;
+      line-height: 28px;
+      margin: 10px 0;
+    }
   }
 
   &__row {
@@ -65,8 +81,22 @@
       padding-bottom: 48px;
     }
 
+    @media (max-width: ($screen-xxl - 1)) {
+      padding-bottom: 20px;
+    }
+
     flex: 0 0 50%;
     max-width: 50%;
+
+    @media (min-width: $screen-lg) and (max-width: ($screen-xxl - 1)) { 
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media (max-width: ($screen-md - 1)) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
 
   &__item-text {
@@ -82,6 +112,10 @@
     color: $green-color;
     margin: 6px 0;
   }
+
+  @media (max-width: ($screen-md - 1)) {
+    padding: 30px;
+  }
 }
 
 .case-gallery {
@@ -92,7 +126,8 @@
 
   &__col {
     @include col();
-    @include col(lg, 4);
+    @include col(md, 4);
+    @include col(sm, 6);
   }
 
   &__card {

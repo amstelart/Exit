@@ -16,18 +16,18 @@
 
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main" class="contacts-page">
+      <main role="main" class="contacts-page page-main">
         <div class="container">
           <div class="contacts-box">
             <div class="contacts-box__content">
               <div class="contacts-box__head">
-                <h1 class="contacts-box__title">Контакты</h1>
+                <h1 class="contacts-box__title page-title">Контакты</h1>
                 <div class="contacts-box__caption">
                   <p>Комплексное техническое оснащении объектов для проведения культурно-зрелищных мероприятий</p>
                 </div>
               </div>
               <div class="contacts-box-info">
-                <div class="contacts-box-info__col">
+                <div class="contacts-box-info__col offices">
                   <div class="contacts-box-info__title">Офис в Челябинске</div>
                   <div class="contacts-box-info__part">
                     <div class="call-box">
@@ -46,7 +46,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="contacts-box-info__col">
+                <div class="contacts-box-info__col requisite">
                   <div class="contacts-box-info__title">Реквизиты компании</div>
                   <ul class="props-list">
                     <li class="props-list__col">
@@ -96,6 +96,7 @@
               </div>
             </div>
             <div class="contacts-box__feedback">
+              <div class="contacts-box__feedback-title">Напишите нам</div>
               <form action="" class="feedback-box__form">
                 <label class="field-text">
                   <span class="field-text__input-wrap">
@@ -109,11 +110,11 @@
                 </label>
                 <label class="field-text">
                   <span class="field-text__input-wrap">
-                    <textarea class="field-text__input" placeholder="textarea"></textarea>
+                    <textarea class="field-text__input" rows="10" placeholder="textarea"></textarea>
                   </span>
                 </label>                
                 <div class="field-actions">
-                  <button class="btn">Бесплатная консультация</button>
+                  <button class="btn btn--blue">Бесплатная консультация</button>
                 </div>
               </form>
             </div>

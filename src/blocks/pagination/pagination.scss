@@ -46,10 +46,42 @@ $border-color:                hsl(0, 0%, 60%) !default;
     }
 
     &.prev {
+      position: relative;
       margin-right: auto;
+      padding-left: 24px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/pagination-prev-icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 8px;
+      }
     } 
     &.next {
+      position: relative;
       margin-left: auto;
+      padding-right: 24px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/pagination-next-icon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 8px;
+      }
     } 
 
     &--active {

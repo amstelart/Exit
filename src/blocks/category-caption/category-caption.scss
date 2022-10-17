@@ -1,0 +1,50 @@
+// В этом файле должны быть стили для БЭМ-блока category-caption, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.category-caption {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-bottom: 55px;
+  max-width: 880px;
+
+  &__head {
+    margin-bottom: 32px;
+
+    @media (max-width: ($screen-xl - 1)) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    color: $font-color-title;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &__sub-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #555B68;
+  }
+
+  p {
+    color: #191D25;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+
+    @media (max-width: ($screen-xl - 1)) {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 15px 0;
+    }
+  }
+
+  @media (max-width: ($screen-xl - 1)) {
+    margin-bottom: 40px;
+  }
+}

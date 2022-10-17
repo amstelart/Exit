@@ -16,17 +16,35 @@
 
   &__content {
     @include col();
-    @include col(lg, 8);
+    @include col(xl, 8);
+    @include col(lg, 7);
+
+    @media (max-width: ($screen-lg - 1)) {
+      margin-bottom: 40px;
+    }
   }
 
   &__feedback {
     @include col();
-    @include col(lg, 4);
+    @include col(xl, 4);
+    @include col(lg, 5);
+  }
+
+  &__feedback-title {
+    color: $font-color-title;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
   }
 
   &__head {
     max-width: 656px;
     margin-bottom: 55px;
+
+    @media (max-width: ($screen-xl - 1)) {
+      margin-bottom: 35px;
+    }
   }
 
   &__title {
@@ -38,6 +56,10 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+
+    @media (max-width: ($screen-xl - 1)) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -48,7 +70,13 @@
 
   &__col {
     @include col();
-    @include col(lg, 5);
+
+    &.offices {
+      @include col(xl, 4);
+    }
+    &.requisite {
+      @include col(xl, 7);
+    }
   }
 
   &__title {
@@ -57,10 +85,18 @@
     font-size: 16px;
     line-height: 16px;
     margin-bottom: 55px;
+
+    @media (max-width: ($screen-xl - 1)) {
+      margin-bottom: 20px;
+    }
   }
 
   &__part {
     margin-bottom: 55px;
+
+    @media (max-width: ($screen-xl - 1)) {
+      margin-bottom: 30px;
+    }
   }
 
   &__email {

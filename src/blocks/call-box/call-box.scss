@@ -11,6 +11,7 @@
   align-items: flex-start;
 
   &__num {
+    white-space: nowrap;
     text-decoration: none;
     color: $font-color-title;
     font-weight: 700;

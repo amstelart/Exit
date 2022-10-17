@@ -8,9 +8,18 @@
 
   display: flex;
 
+  @media (max-width: $screen-md) {
+    display: block;
+  }
+
   &__img {
     flex-shrink: 0;
     margin-right: 40px;
+
+    @media (max-width: $screen-md) {
+      margin-right: 0;
+      display: inline-block;
+    }
   }
   &__img-box {
     background-color: #fff;

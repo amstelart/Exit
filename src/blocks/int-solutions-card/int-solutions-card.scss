@@ -14,9 +14,20 @@
     padding: 48px 56px;
     margin-bottom: 40px;
     display: flex;
+
+    @media (max-width: ($screen-xxl - 1)) {
+      padding: 24px 32px;
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: ($screen-lg - 1)) {
+      padding: 20px 24px;
+      margin-bottom: 15px;
+    }
   }
 
   &__icon {
+    display: block;
     flex-shrink: 0;
     width: 80px;
     height: 80px;
@@ -24,12 +35,47 @@
     border-radius: 8px;
     margin-right: 24px;
     position: relative;
+    transition: background $transition-time;
 
     svg {
+      fill: #4697DD;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      transition: fill $transition-time;
+    }
+
+    &:hover,
+    &:focus {
+      background: linear-gradient(267.08deg, rgba(255, 255, 255, 0.27) 0%, rgba(255, 255, 255, 0) 100%), #4697DD;
+
+      svg {
+        fill: #fff;
+      }
+    }
+
+    @media (max-width: ($screen-xxl - 1)) {
+      width: 60px;
+      height: 60px;
+
+      svg {
+        width: 34px;
+        height: 34px;
+      }
+    }
+
+    @media (max-width: ($screen-lg - 1)) {
+      width: 48px;
+      height: 48px;
+      margin-right: 15px;
+      background: linear-gradient(267.08deg, rgba(255, 255, 255, 0.27) 0%, rgba(255, 255, 255, 0) 100%), #4697DD;
+
+      svg {
+        width: 28px;
+        height: 28px;
+        fill: #fff;
+      }
     }
   }
 
@@ -42,12 +88,46 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
+
+    @media (max-width: ($screen-xxl - 1)) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    @media (max-width: ($screen-lg - 1)) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $font-color-title;
+      transition: color $transition-time;
+    }
+
+    &:hover,
+    &:focus  {
+      a {
+        color: $main-color;
+      }
+    }
   }
   
   &__text {
     color: $font-color-text;
     font-weight: 400;
-    font-size: 16px;
     line-height: 28px;
+
+    p {
+      @media (max-width: ($screen-xxl - 1)) {
+        margin: 10px 0;
+      }
+
+      @media (max-width: ($screen-md - 1)) {
+        margin: 8px 0;
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
   }
 }

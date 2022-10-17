@@ -36,6 +36,18 @@ $border-radius:               3px !default;
   background-image: none;
   cursor: pointer;
 
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 16px 24px;
+  letter-spacing: 0.03em;
+
+  @media (max-width: ($screen-xl - 1)) {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 12px 20px;
+  }
+
   &:hover,
   &:focus {
     text-decoration: none;
@@ -90,11 +102,6 @@ $border-radius:               3px !default;
   // }
 
   &--catalog {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    padding: 16px 24px;
     text-transform: uppercase;
     color: #fff;
     background: linear-gradient(267.08deg, rgba(255, 255, 255, 0.27) 0%, rgba(255, 255, 255, 0) 100%), #4697DD;
@@ -112,11 +119,6 @@ $border-radius:               3px !default;
   }
 
   &--advice-box {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    padding: 16px 24px;
     text-transform: uppercase;
     color: #191D25;
     background: #fff;
@@ -129,6 +131,39 @@ $border-radius:               3px !default;
       background: #fff;
       box-shadow: 0px 16px 48px rgba(70, 151, 221, 0.37);
       color: #191D25;
+    }
+  }
+
+  &--white {
+    text-transform: uppercase;
+    color: #191D25;
+    background: #fff;
+    border-radius: 8px;
+    border: none;
+    transition: all $transition-time;
+
+    &:hover,
+    &:focus {
+      background: #fff;
+      box-shadow: 0px 16px 48px rgba(70, 151, 221, 0.37);
+      color: #191D25;
+    }
+  }
+
+  &--blue {
+    text-transform: uppercase;
+    color: #fff;
+    background: #4697DD;
+    box-shadow: 0px 8px 24px rgba(70, 151, 221, 0.37);
+    border-radius: 8px;
+    border: none;
+    transition: all $transition-time;
+
+    &:hover,
+    &:focus {
+      background: $main-color;
+      box-shadow: 0px 16px 48px rgba(70, 151, 221, 0.37);
+      color: #fff;
     }
   }
 }

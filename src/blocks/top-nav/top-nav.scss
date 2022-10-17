@@ -4,6 +4,10 @@
 
 .top-nav-box {
   padding: 12px 0;
+
+  @media (max-width: ($screen-md - 1)) {
+    display: none;
+  }
 }
 
 .top-nav {

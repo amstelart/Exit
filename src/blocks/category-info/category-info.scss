@@ -33,12 +33,21 @@
   &__card {
     position: relative;
     padding-left: 84px;
+
+    @media (max-width: ($screen-xl - 1)) {
+      padding-left: 62px;
+    }
   }
 
   &__icon {
     position: absolute;
     top: 0;
     left: 0;
+
+    @media (max-width: ($screen-xl - 1)) {
+      width: 42px;
+      height: 42px;
+    }
   }
 
   &__item-title {

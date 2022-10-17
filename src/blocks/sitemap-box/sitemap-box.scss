@@ -12,12 +12,36 @@
     &:not(:last-child) {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       margin-bottom: 50px;
+
+      @media (max-width: ($screen-xxl - 1)) {
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: $screen-md) {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+      }
     }
   }
 
   &__col {
     @include col();
-    @include col(lg, 4);
+    @include col(md, 4);
+    @include col(sm, 6);
     margin-bottom: 50px;
+   
+    @media (max-width: ($screen-xxl - 1)) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 0;
+    }
+
+    .custom-dot-list {
+      @media (max-width: $screen-md) {
+        margin: 10px 0;
+      }
+    }
   }
 }

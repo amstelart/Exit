@@ -14,6 +14,11 @@
     font-size: 32px;
     line-height: 44px;
     margin: 0;
+
+    @media (max-width: ($screen-md - 1)) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__box {
@@ -86,6 +91,6 @@
   padding: 0 0 20px 20px;
   color: $font-color-title;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  // font-size: 16px;
+  // line-height: 24px;
 }

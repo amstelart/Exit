@@ -26,6 +26,11 @@
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 12px;
+
+    @media (max-width: ($screen-xl - 1)) {
+      font-size: 32px;
+      line-height: 46px;
+    }
   }
 
   &__text {
@@ -43,5 +48,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
+  }
+
+  @media (max-width: ($screen-xl - 1)) {
+    padding: 30px 40px;
   }
 }

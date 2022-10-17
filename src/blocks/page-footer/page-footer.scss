@@ -20,22 +20,41 @@
     &:not(:last-child) {      
       margin-bottom: 20px;
     }
+
+    @media (max-width: ($screen-lg - 1)) {
+
+      &:first-child {
+        order: 2;
+      }
+
+      &:nth-child(2) {
+        order: 1;
+      }
+    }
   }
 
   .logo {
     padding-bottom: 20px;
+
+    @media (max-width: ($screen-lg - 1)) {
+      display: none;
+    }
   }
   .call-box {
     padding-bottom: 30px;
   }
   .page-footer-copyright {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
     padding-bottom: 15px;
   }
   .social {
     padding: 20px 0 50px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 12px 0;
   }
 }
 
@@ -65,6 +84,10 @@
       color: $main-color;
     }
   }
+
+  @media (max-width: ($screen-lg - 1)) {
+    display: none;
+  }
 }
 
 .fcatalog {
@@ -90,6 +113,10 @@
       color: $main-color;
     }
   }
+
+  @media (max-width: ($screen-lg - 1)) {
+    display: none;
+  }
 }
 
 .footer-links {
@@ -104,6 +131,11 @@
   .footer-links-text {
     flex-grow: 1;
     p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      margin: 12px 0;
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -118,5 +150,9 @@
         text-decoration: none;
       }
     }
+  }
+
+  @media (max-width: ($screen-xl - 1)) {
+    flex-wrap: wrap;
   }
 }

@@ -20,8 +20,48 @@
 
   .logo {
     margin-right: 62px;
+    flex-shrink: 0;
+
+    @media (max-width: ($screen-xl - 1)) {
+      margin-right: 35px;
+    }
+
+    @media (max-width: ($screen-md - 1)) {
+      width: 173px;
+    }
   }
   .call-box {
     margin-left: auto;
+
+    @media (max-width: ($screen-md - 1)) {
+      display: none;
+    }
+  }
+
+  .header-nav {
+    @media (max-width: ($screen-lg - 1)) {
+      display: none;
+    }
+  }
+
+  .btn--catalog {
+    @media (max-width: ($screen-md - 1)) {
+      display: none;
+    }
+  }
+}
+
+.mobile-group {
+  display: none;
+
+  &__item {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;
+  }
+
+  @media (max-width: ($screen-md - 1)) {
+    display: flex;
   }
 }

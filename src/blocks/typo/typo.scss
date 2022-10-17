@@ -163,6 +163,10 @@ body {
   font-size: $font-size;
   line-height: $line-height;
   color: $text-color;
+
+  @media (max-width: ($screen-xxl - 1)) {
+    font-size: 14px;
+  }
 }
 
 // .h1,
@@ -403,6 +407,10 @@ pre {
 
     &:not(:last-child) {
       margin-bottom: 20px;
+
+      @media (max-width: ($screen-xxl - 1)) {
+        margin-bottom: 10px;
+      }
     }
 
     &:before {

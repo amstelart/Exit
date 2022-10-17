@@ -95,7 +95,8 @@
     "news-card": [],
     "text-page": [],
     "sitemap-page": [],
-    "sitemap-box": []
+    "sitemap-box": [],
+    "category-caption": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

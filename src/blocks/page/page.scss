@@ -92,10 +92,20 @@ img {
 }
 
 .container {
-  display: block;
-  width: 1358px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  @include container;
+}
+
+.page-title {
+
+  @media (max-width: ($screen-md - 1)) {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+.page-main {
+
+  @media (max-width: ($screen-md - 1)) {
+    padding: 24px 0;
+  }
 }

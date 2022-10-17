@@ -11,6 +11,7 @@
   &__item {
     @include col();
     @include col(lg, 4);
+    @include col(sm, 6);
 
     margin-bottom: 55px;
   }
