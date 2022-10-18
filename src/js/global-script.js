@@ -10,6 +10,14 @@ $( document ).ready(function() {
         loop: true,
         center: true
     });
+
+    $('#mobile-nav').hcOffcanvasNav({
+      disableAt: 1024,
+      customToggle: $('.toggle'),
+      navTitle: 'Меню',
+      levelTitles: true,
+      levelTitleAsBack: true
+    });
 });
 
 // Изоляция без jQuery
