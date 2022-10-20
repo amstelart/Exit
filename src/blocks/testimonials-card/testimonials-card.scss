@@ -17,8 +17,7 @@
     margin-right: 40px;
 
     @media (max-width: $screen-md) {
-      margin-right: 0;
-      display: inline-block;
+      display: none;
     }
   }
   &__img-box {
@@ -40,19 +39,32 @@
   &__title {
     color: $font-color-title;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    
+    @media (min-width: $screen-lg) {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
   }
   &__case {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.3;
     color: #989EAC;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+
+    @media (min-width: $screen-lg) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
 
     p {
       margin: 3px 0;
+      line-height: inherit;
     }
 
     a {
@@ -67,7 +79,38 @@
   }
   &__text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 26px;
+
+    h4, p {
+      margin: 8px 0;
+      font-weight: 400;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+  &__action {
+    background: #F6F7F9;
+    border-radius: 6px;
+    padding: 12px;
+    color: #4697DD;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+
+    span {
+      padding-left: 22px;
+      background-image: url(../img/icon-file-text.svg);
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
   }
 }

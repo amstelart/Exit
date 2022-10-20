@@ -31,28 +31,32 @@
   &__title {
     color: $font-color-title;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    margin: 0 0 20px 0;
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0 0 4px 0;
+    
+    @media (min-width: $screen-lg) {
+      font-size: 48px;
+      line-height: 56px;
+      margin: 0 0 20px 0;
+    }
   }
 
   p {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    margin-bottom: 24px;
-    max-width: 840px;
-
-    @media (max-width: ($screen-xxl - 1)) {
-      font-size: 18px;
-      line-height: 28px;
-      margin: 15px 0;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 4px 0;
+    color: #191D25;
+    small {
+      color: #989EAC;
     }
-    
-    @media (max-width: $screen-md) {
-      font-size: 16px;
-      line-height: 28px;
-      margin: 10px 0;
+
+    @media (min-width: $screen-lg) {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 24px;
+      max-width: 840px;
     }
   }
 

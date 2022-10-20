@@ -45,6 +45,15 @@ $border-color:                hsl(0, 0%, 60%) !default;
       }
     }
 
+    &.prev,
+    &.next {
+      @media (max-width: ($screen-lg - 1)) {
+        span {
+          display: none;
+        }
+      }
+    }
+
     &.prev {
       position: relative;
       margin-right: auto;

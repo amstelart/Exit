@@ -268,8 +268,7 @@ ol,
 dl,
 blockquote,
 pre,
-address,
-figure {
+address {
   margin-top: 24px;
   margin-bottom: 24px;
   line-height: 28px;
@@ -278,6 +277,30 @@ figure {
     margin-top: 18px;
     margin-bottom: 18px;
     line-height: 26px;
+  }
+}
+
+figure {
+  margin: 24px 0;
+
+  img {
+    border-radius: 8px;
+  }
+
+  figcaption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #989EAC;
+  }
+
+  @media (max-width: $screen-lg - 1) {
+    margin: 18px 0;
+
+    figcaption {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 }
 

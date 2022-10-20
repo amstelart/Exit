@@ -8,12 +8,17 @@
 
   padding-top: 50px;
   padding-bottom: 50px;
+
 }
 
 .catalog-head {
   @include row;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
 
+  @media (min-width: $screen-xxl) {
+    margin-bottom: 90px;
+  }
+  
   &__info {
     @include col();
     @include col(lg, 8);

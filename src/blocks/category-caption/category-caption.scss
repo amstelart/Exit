@@ -20,28 +20,39 @@
   &__title {
     color: $font-color-title;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 24px;
+    
+    @media (min-width: $screen-lg) {
+      font-size: 24px;
+      line-height: 36px;
+    }
   }
 
   &__sub-title {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
     color: #555B68;
+    font-size: 14px;
+    line-height: 22px;
+    
+    @media (min-width: $screen-lg) {
+      font-size: 16px;
+      line-height: 28px;
+    }
   }
 
   p {
     color: #191D25;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 12px 0;
 
-    @media (max-width: ($screen-xl - 1)) {
-      font-size: 18px;
-      line-height: 28px;
-      margin: 15px 0;
+    @media (min-width: $screen-lg) {
+      font-size: 20px;
+      line-height: 32px;
     }
+
   }
 
   @media (max-width: ($screen-xl - 1)) {

@@ -47,7 +47,11 @@
     padding-bottom: 15px;
   }
   .social {
-    padding: 20px 0 50px;
+    padding: 0 0 25px 0;
+
+    @media (min-width: $screen-lg) {
+      padding: 20px 0 50px;
+    }
   }
 
   p {

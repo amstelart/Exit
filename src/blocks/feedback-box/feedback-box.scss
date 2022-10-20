@@ -47,10 +47,10 @@
 
     .field-text {
       margin-bottom: 32px;
-    }
 
-    .field-text__input {
-      background-color: #fff;
+      @media (max-width: ($screen-lg - 1)) {
+        margin-bottom: 15px;
+      }
     }
 
     .btn {

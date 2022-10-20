@@ -82,9 +82,19 @@ $border-radius:               3px !default;
       min-height: calc(#{$textarea-height} + 2px);
       resize: vertical;
     }
+
+    @media (max-width: ($screen-lg - 1)) {
+      padding: 16px;
+    }
   }
 
   &__help-text {
     @include field-help-text;
+  }
+
+  &--white {
+    #{$block-name}__input {
+      background: #fff;
+    }
   }
 }

@@ -7,16 +7,30 @@
   $block-name:                &; // #{$block-name}__element
 
   background: #F6F7F9;
-  padding-top: 55px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $screen-lg) {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
 
   &__title {
-    text-align: center;
     color: $font-color-title;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
     margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (min-width: $screen-md) {
+      text-align: left;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    @media (min-width: $screen-lg) {
+      text-align: center;
+    }
   }
 
   &__group {
@@ -27,15 +41,22 @@
     @include col();
     @include col(lg, 6);
 
-    margin-top: 50px;
+    margin-top: 24px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 35px;
+    }
+    @media (min-width: $screen-lg) {
+      margin-top: 50px;
+    }
   }
 
   &__card {
     position: relative;
-    padding-left: 84px;
-
-    @media (max-width: ($screen-xl - 1)) {
-      padding-left: 62px;
+    padding-left: 42px;
+    
+    @media (min-width: $screen-lg) {
+      padding-left: 84px;
     }
   }
 
@@ -43,24 +64,37 @@
     position: absolute;
     top: 0;
     left: 0;
-
-    @media (max-width: ($screen-xl - 1)) {
-      width: 42px;
-      height: 42px;
+    width: 32px;
+    height: 32px;
+    
+    @media (min-width: $screen-lg) {
+      width: 60px;
+      height: 60px;
     }
   }
 
   &__item-title {
     color: $font-color-title;
-    margin-bottom: 8px;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 4px;
+    
+    @media (min-width: $screen-lg) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
   }
 
   &__item-text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 22px;
+    
+    @media (min-width: $screen-lg) {      
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }

@@ -97,7 +97,12 @@ img {
 
 .page-title {
 
-  @media (max-width: ($screen-md - 1)) {
+  @media (max-width: $screen-md) {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  @media (max-width: $screen-lg - 1) {
     font-size: 30px;
     line-height: 38px;
   }

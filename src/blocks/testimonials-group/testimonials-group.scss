@@ -8,10 +8,16 @@
 
   &__item {
     border-bottom: 1px solid #E5E8EC;
-    padding-bottom: 55px;
+    padding-bottom: 25px;
+    @media (min-width: $screen-md) {
+      padding-bottom: 55px;
+    }
 
     &:not(:first-child) {
-      padding-top: 55px;
+      padding-top: 25px;
+      @media (min-width: $screen-md) {
+        padding-top: 55px;
+      }
     }
   }
 }

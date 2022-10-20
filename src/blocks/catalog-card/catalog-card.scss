@@ -17,13 +17,13 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 
-  @media (max-width: ($screen-xxl - 1)) {
-    margin-bottom: 40px;
+  @media (min-width: $screen-xxl) {
+    margin-bottom: 50px;
   }
-  @media (max-width: ($screen-md - 1)) {
-    margin-bottom: 25px;
+  @media (min-width: $screen-xl) {
+    margin-bottom: 40px;
   }
 
   &__inner {
@@ -135,7 +135,7 @@
       transition: fill $transition-time;
     }
 
-    @media (max-width: ($screen-xxl - 1)) {
+    @media (max-width: $screen-xxl) {
       width: 60px;
       height: 60px;
 
@@ -145,7 +145,7 @@
       }
     }
 
-    @media (max-width: ($screen-lg - 1)) {
+    @media (max-width: $screen-lg) {
       width: 48px;
       height: 48px;
       margin-right: 12px;
@@ -161,10 +161,10 @@
 
   &__title {
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
     color: $font-color-title;
     margin: 0 0 12px 0;
+    font-size: 20px;
+    line-height: 24px;
 
     a {
       color: $font-color-title;
@@ -172,13 +172,14 @@
       transition: color $transition-time;
     }
     
-    @media (max-width: $screen-md) {
-      font-size: 20px;
-      line-height: 24px;
-    }
-    @media (max-width: ($screen-xxl - 1)) {
+    @media (min-width:$screen-xl) {
       font-size: 24px;
       line-height: 36px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      font-size: 32px;
+      line-height: 40px;
     }
   }
 
