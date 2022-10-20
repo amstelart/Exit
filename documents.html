@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Documents</title>
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <nav id="mobile-nav">
+        <ul class="first-nav">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Партнерам</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Документы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="bottom-nav">
+          <li class="github">
+            <a href="#" rel="noreferrer" target="_blank">
+              <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_108_1705)">
+                <path d="M14.1667 1.66602H5.83332C3.53214 1.66602 1.66666 3.5315 1.66666 5.83268V14.166C1.66666 16.4672 3.53214 18.3327 5.83332 18.3327H14.1667C16.4678 18.3327 18.3333 16.4672 18.3333 14.166V5.83268C18.3333 3.5315 16.4678 1.66602 14.1667 1.66602Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.3333 9.47525C13.4362 10.1688 13.3177 10.8771 12.9948 11.4994C12.6719 12.1218 12.161 12.6264 11.5347 12.9416C10.9084 13.2569 10.1987 13.3666 9.5065 13.2552C8.81428 13.1438 8.17481 12.817 7.67904 12.3212C7.18327 11.8255 6.85645 11.186 6.74507 10.4938C6.63368 9.80154 6.7434 9.09183 7.05862 8.46556C7.37383 7.8393 7.8785 7.32837 8.50083 7.00545C9.12316 6.68254 9.83147 6.56407 10.525 6.66692C11.2324 6.77182 11.8874 7.10147 12.3931 7.60717C12.8988 8.11288 13.2284 8.76782 13.3333 9.47525Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.5833 5.41602H14.5925" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clippath id="clip0_108_1705">
+                <rect width="20" height="20" fill="white"/>
+                </clippath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="email">
+            <a href="mailto:somewebmedia@gmail.com" target="_blank">
+              <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 1.66602H12.5C11.3949 1.66602 10.3351 2.105 9.55373 2.8864C8.77233 3.66781 8.33334 4.72761 8.33334 5.83268V8.33268H5.83334V11.666H8.33334V18.3327H11.6667V11.666H14.1667L15 8.33268H11.6667V5.83268C11.6667 5.61167 11.7545 5.39971 11.9108 5.24343C12.067 5.08715 12.279 4.99935 12.5 4.99935H15V1.66602Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li class="ko-fi">
+            <a href="https://ko-fi.com/somewebguy" rel="noreferrer" target="_blank">
+              <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.7834 5.35065C18.6844 4.95516 18.4828 4.59279 18.1989 4.30016C17.915 4.00752 17.559 3.79497 17.1667 3.68398C15.7334 3.33398 10 3.33398 10 3.33398C10 3.33398 4.2667 3.33398 2.83336 3.71732C2.44107 3.8283 2.08501 4.04085 1.80115 4.33349C1.51729 4.62613 1.31569 4.98849 1.2167 5.38398C0.954374 6.83861 0.826059 8.31424 0.833362 9.79232C0.824012 11.2815 0.952335 12.7684 1.2167 14.234C1.32583 14.6172 1.53195 14.9658 1.81515 15.2461C2.09835 15.5263 2.44905 15.7288 2.83336 15.834C4.2667 16.2173 10 16.2173 10 16.2173C10 16.2173 15.7334 16.2173 17.1667 15.834C17.559 15.723 17.915 15.5104 18.1989 15.2178C18.4828 14.9252 18.6844 14.5628 18.7834 14.1673C19.0437 12.7236 19.172 11.2593 19.1667 9.79232C19.176 8.30311 19.0477 6.81623 18.7834 5.35065V5.35065Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.125 12.5164L12.9167 9.79141L8.125 7.06641V12.5164Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <header class="page-header" role="banner">
+        <div class="top-nav-box">
+          <div class="container">
+            <ul class="top-nav">
+              <li class="top-nav__item"><a class="top-nav__link" href="#">О компании</a></li>
+              <li class="top-nav__item"><a class="top-nav__link" href="#">Новости</a></li>
+              <li class="top-nav__item"><a class="top-nav__link" href="#">Партнерам</a></li>
+              <li class="top-nav__item"><a class="top-nav__link" href="#">Отзывы</a></li>
+              <li class="top-nav__item"><a class="top-nav__link" href="#">Документы</a></li>
+              <li class="top-nav__item"><a class="top-nav__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-box">
+          <div class="container">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt></a>
+            <a href="#" class="btn btn--catalog">Каталог оборудования</a>
+            <ul class="header-nav">
+              <li class="header-nav__item"><a href="#" class="header-nav__link">Наши услуги</a></li>
+              <li class="header-nav__item"><a href="#" class="header-nav__link">Выполненные проекты</a></li>
+            </ul>
+            <div class="call-box">
+              <a href="tel:+73517009080" class="call-box__num">+7(351)700-90-80</a>
+              <a href="#" class="call-box__link">Заказать звонок</a>
+            </div>
+            <div class="mobile-group">
+              <a class="mobile-group__item toggle" href="#"><img src="img/menu-icon.svg" alt></a>
+              <a class="mobile-group__item" href="catalog.html"><img src="img/catalog-icon.svg" alt></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main role="main" class="sidebar-layout documents-page page-main">
+        <div class="container">
+          <div class="sidebar-layout__row">
+            <div class="sidebar-layout__sidebar">
+              <nav class="sidebar-nav">
+                <ul class="sidebar-nav__list">
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link">О компании</a>
+                  </li>
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link">Новости</a>
+                  </li>
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link">Партнерам</a>
+                  </li>
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link">Отзывы</a>
+                  </li>
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link active">Документы</a>
+                  </li>
+                  <li class="sidebar-nav__item">
+                    <a href="#" class="sidebar-nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="sidebar-layout__content">
+              <div class="sidebar-layout__head">
+                <h1 class="sidebar-layout__title page-title">Документы</h1>
+              </div>
+              <div class="documents-group">
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-01.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции, капитальному ремонту</p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-02.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции, капитальному ремонту, сносу объектов капитального строительства</p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-03.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции, капитальному</p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-01.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции капитальному</p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-02.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции, капитальному ремонту, сносу объектов капитального строительства</p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-03.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции, капитальному ремонту, сносу объектов капитального строительства сносу объектов капитального строительства</p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-01.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции, капитальному ремонту, сносу объектов капитального строительства</p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-02.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции, капитальному ремонту, сносу объектов капитального строительства</p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-03.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции, капитальному ремонту, сносу объектов капитального строительства</p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-01.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции, капитальному ремонту, сносу объектов капитального строительства</p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-02.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции, капитальному ремонту, сносу объектов капитального строительства</p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="documents-group__item">
+                  <div class="documents-card">
+                    <div class="documents-card__img-wrap">
+                      <div class="documents-card__img">
+                        <img src="img/document-img-03.jpg" alt>
+                      </div>
+                    </div>
+                    <div class="documents-card__caption">
+                      <p>Выписка из реестра СРО о допуске к строительству, реконструкции, капитальному </p>
+                    </div>
+                    <a href="#" class="documents-card__download download-link">
+                      <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.5 1.5H4.5C4.10218 1.5 3.72064 1.65804 3.43934 1.93934C3.15804 2.22064 3 2.60218 3 3V15C3 15.3978 3.15804 15.7794 3.43934 16.0607C3.72064 16.342 4.10218 16.5 4.5 16.5H13.5C13.8978 16.5 14.2794 16.342 14.5607 16.0607C14.842 15.7794 15 15.3978 15 15V6L10.5 1.5Z" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 1.5V6H15" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 9.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 6.75H6.75H6" stroke="#393D45" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Скачать</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="container">
+          <div class="page-footer__box">
+            <div class="page-footer__item">
+              <div><a href="#" class="logo"><img src="img/logo-light.svg" alt></a></div>
+              <div class="page-footer-copyright">
+                <p>© 2022, ООО «Эксис»</p>
+                <p>Комплексное техническое оснащении объектов для проведения культурно-зрелищных мероприятий</p>
+              </div>
+              <div class="footer-links">
+                <div class="footer-links-rf">
+                  <img src="img/rf.png" alt>
+                </div>
+                <div class="footer-links-text">
+                  <p><a href="#">Политика конфиденциальности</a></p>
+                  <p><a href="#">Карта сайта</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="page-footer__item">
+              <div class="call-box">
+                <a href="tel:+73517009080" class="call-box__num">+7(351)700-90-80</a>
+                <a href="#" class="call-box__link">Заказать звонок</a>
+              </div>
+              <p>454021 г. Челябинск, <br>ул. Чичерина 37Б офис 005</p>
+              <div class="social">
+                <div class="social__item">
+                  <a href="#" target="_blank" class="social__link">
+                    <svg fill="none" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#a)" stroke="#989EAC" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4">
+                    <path d="m14.167 1.666h-8.3334c-2.3012 0-4.1667 1.8655-4.1667 4.1667v8.3333c0 2.3012 1.8655 4.1667 4.1667 4.1667h8.3334c2.3011 0 4.1666-1.8655 4.1666-4.1667v-8.3333c0-2.3012-1.8655-4.1667-4.1666-4.1667z"/>
+                    <path d="m13.333 9.4752c0.1029 0.69355-0.0156 1.4018-0.3385 2.0242-0.3229 0.6224-0.8338 1.127-1.4601 1.4422-0.6263 0.3153-1.336 0.425-2.0282 0.3136-0.69222-0.1114-1.3317-0.4382-1.8275-0.934-0.49577-0.4957-0.82259-1.1352-0.93397-1.8274-0.11139-0.69226-0.00167-1.402 0.31355-2.0282 0.31521-0.62626 0.81988-1.1372 1.4422-1.4601 0.62233-0.32291 1.3306-0.44138 2.0242-0.33853 0.7074 0.1049 1.3624 0.43455 1.8681 0.94025 0.5057 0.50571 0.8353 1.1606 0.9402 1.8681z"/>
+                    <path d="m14.583 5.416h0.0092"/>
+                    </g>
+                    <defs>
+                    <clippath id="a">
+                    <rect width="20" height="20" fill="#fff"/>
+                    </clippath>
+                    </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" target="_blank" class="social__link">
+                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 1.66602H12.5C11.3949 1.66602 10.3351 2.105 9.55373 2.8864C8.77233 3.66781 8.33334 4.72761 8.33334 5.83268V8.33268H5.83334V11.666H8.33334V18.3327H11.6667V11.666H14.1667L15 8.33268H11.6667V5.83268C11.6667 5.61167 11.7545 5.39971 11.9108 5.24343C12.067 5.08715 12.279 4.99935 12.5 4.99935H15V1.66602Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+                <div class="social__item">
+                  <a href="#" target="_blank" class="social__link">
+                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.7834 5.35065C18.6844 4.95516 18.4828 4.59279 18.1989 4.30016C17.915 4.00752 17.559 3.79497 17.1667 3.68398C15.7334 3.33398 10 3.33398 10 3.33398C10 3.33398 4.2667 3.33398 2.83336 3.71732C2.44107 3.8283 2.08501 4.04085 1.80115 4.33349C1.51729 4.62613 1.31569 4.98849 1.2167 5.38398C0.954374 6.83861 0.826059 8.31424 0.833362 9.79232C0.824012 11.2815 0.952335 12.7684 1.2167 14.234C1.32583 14.6172 1.53195 14.9658 1.81515 15.2461C2.09835 15.5263 2.44905 15.7288 2.83336 15.834C4.2667 16.2173 10 16.2173 10 16.2173C10 16.2173 15.7334 16.2173 17.1667 15.834C17.559 15.723 17.915 15.5104 18.1989 15.2178C18.4828 14.9252 18.6844 14.5628 18.7834 14.1673C19.0437 12.7236 19.172 11.2593 19.1667 9.79232C19.176 8.30311 19.0477 6.81623 18.7834 5.35065V5.35065Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M8.125 12.5164L12.9167 9.79141L8.125 7.06641V12.5164Z" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="metrik-counter">
+                <div class="metrik-counter__item"><img src="img/metrik-counter-01.png" alt></div>
+                <div class="metrik-counter__item"><img src="img/metrik-counter-02.png" alt></div>
+              </div>
+            </div>
+            <div class="page-footer__item">
+              <ul class="fnav">
+                <li class="fnav__item"><a class="fnav__link" href="#">Наши услуги</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">Выполненные проекты</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">О компании</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">Новости</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">Партнерам</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">Отзывы</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="#">Документы</a></li>
+              </ul>
+            </div>
+            <div class="page-footer__item">
+              <ul class="fcatalog">
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Световое оборудование</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Звуковое оборудование</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Видеопроекционное оборудование и светодиодные экраны</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Оснащение конференц-залов</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Механика и одежда сцены</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Кресла для залов</a></li>
+                <li class="fcatalog__item"><a href="#" class="fcatalog__link">Мультимедиа</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
