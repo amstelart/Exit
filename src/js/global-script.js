@@ -11,12 +11,22 @@ $( document ).ready(function() {
         center: true
     });
 
+    // $('#mobile-nav').hcOffcanvasNav({
+    //   disableAt: 1024,
+    //   customToggle: $('.toggle'),
+    //   navTitle: 'Меню',
+    //   levelTitles: true,
+    //   levelTitleAsBack: true
+    // });
     $('#mobile-nav').hcOffcanvasNav({
-      disableAt: 1024,
-      customToggle: $('.toggle'),
+      customToggle: $('.m-menu-toggle'),
       navTitle: 'Меню',
-      levelTitles: true,
-      levelTitleAsBack: true
+      position: 'top'
+    });
+    $('#mobile-catalog').hcOffcanvasNav({
+      customToggle: $('.m-catalog-toggle'),
+      navTitle: 'Каталог оборудования',
+      position: 'top'
     });
 });
 

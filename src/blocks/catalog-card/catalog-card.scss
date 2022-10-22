@@ -117,44 +117,57 @@
   }
 
   &__icon {
-    width: 80px;
-    height: 80px;
-    background: #F6F7F9;
-    border-radius: 8px;
+    display: block;
     flex-shrink: 0;
-    margin-right: 24px;
+    border-radius: 8px;
     position: relative;
     transition: background $transition-time;
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+    background: linear-gradient(267.08deg, rgba(255, 255, 255, 0.27) 0%, rgba(255, 255, 255, 0) 100%), #4697DD;
 
     svg {
+      fill: #4697DD;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      fill: #4697DD;
       transition: fill $transition-time;
+      width: 28px;
+      height: 28px;
+      fill: #fff;
     }
 
-    @media (max-width: $screen-xxl) {
+    @media (min-width: $screen-lg) {
       width: 60px;
       height: 60px;
+      background: #F6F7F9;
 
       svg {
         width: 34px;
         height: 34px;
+        fill:#4697DD;
+      }
+
+      &:hover,
+      &:focus {
+        background: linear-gradient(267.08deg, rgba(255, 255, 255, 0.27) 0%, rgba(255, 255, 255, 0) 100%), #4697DD;
+  
+        svg {
+          fill: #fff;
+        }
       }
     }
 
-    @media (max-width: $screen-lg) {
-      width: 48px;
-      height: 48px;
-      margin-right: 12px;
-      background: linear-gradient(267.08deg, rgba(255, 255, 255, 0.27) 0%, rgba(255, 255, 255, 0) 100%), #4697DD;
+    @media (min-width: $screen-xxl) {
+      width: 80px;
+      height: 80px;
+      margin-right: 24px;
 
       svg {
-        width: 28px;
-        height: 28px;
-        fill: #fff;
+        width: 48px;
+        height: 48px;
       }
     }
   }
