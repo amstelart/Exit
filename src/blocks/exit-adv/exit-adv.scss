@@ -70,7 +70,13 @@
   padding-bottom: 40px;
 
   @media (min-width: $screen-lg) {
+    padding-top: 215px;
+  }
+  @media (min-width: $screen-xl) {
     padding-top: 192px;
+  }
+  @media (min-width: $screen-xxl) {
+    padding-top: 200px;
   }
 
   .exit-adv-img-itm-left,

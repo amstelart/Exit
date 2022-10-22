@@ -114,3 +114,50 @@ img {
     padding: 24px 0;
   }
 }
+
+.error-page {
+  padding: 50px 0;
+
+  @media (min-width: $screen-lg) {
+    padding: 96px 0;
+  }
+}
+
+.error-page-box {
+  max-width: 863px;
+  height: 320px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+
+  background-image: url(../img/error-image.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+
+  @media (min-width: $screen-md) {
+    height: 480px;
+  }
+
+  &__caption {
+    text-align: center;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #000000;
+    margin: 0 0 10px 0;
+
+    @media (min-width: $screen-lg) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
