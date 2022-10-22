@@ -309,8 +309,7 @@ a {
   text-decoration: underline;
   transition: color $transition-time;
 
-  &:hover,
-  &:focus {
+  &:hover {
     text-decoration: none;
     color: $main-color-2;
   }

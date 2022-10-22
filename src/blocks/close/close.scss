@@ -2,8 +2,8 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-$toggler-part-height:         3px !default;
-$toggler-part-bg-color:       #000 !default;
+$toggler-part-height:         2px;
+$toggler-part-bg-color:       #989EAC;
 
 .close {
 
@@ -35,6 +35,7 @@ $toggler-part-bg-color:       #000 !default;
       height: $toggler-part-height;
       background: $toggler-part-bg-color;
       transform-origin: 50% 50%;
+      transition: background $transition-time;
     }
 
     &:before {
@@ -43,6 +44,15 @@ $toggler-part-bg-color:       #000 !default;
 
     &:after {
       transform: rotate3d(0, 0, 1, -45deg);
+    }
+  }
+
+  &:hover {
+    > span {
+      &:before,
+      &:after {
+        background: #555B68;
+      }
     }
   }
 }

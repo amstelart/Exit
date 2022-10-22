@@ -69,6 +69,10 @@
   padding-top: 20px;
   padding-bottom: 40px;
 
+  @media (min-width: $screen-lg) {
+    padding-top: 192px;
+  }
+
   .exit-adv-img-itm-left,
   .exit-adv-img-itm-right {
     padding-left: 8px;
