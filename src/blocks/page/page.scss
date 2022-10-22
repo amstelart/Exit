@@ -28,6 +28,10 @@
 
   &__content {
     flex-grow: 1;
+
+    @media (max-width: $screen-md) {
+      padding-top: 105px;
+    }
   }
 
   &__footer-wrapper {
