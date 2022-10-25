@@ -20,20 +20,20 @@
   &__title {
     color: $font-color-title;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    margin: 0 0 40px 0;
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0 0 24px 0;
 
-    @media (max-width: $screen-xxl) {
+    @media (min-width: $screen-lg) {
       font-size: 42px;
       line-height: 48px;
       margin: 0 0 30px 0;
     }
 
-    @media (max-width: $screen-lg) {
-      font-size: 30px;
-      line-height: 38px;
-      margin: 0 0 24px 0;
+    @media (min-width: $screen-xxl) {
+      font-size: 48px;
+      line-height: 56px;
+      margin: 0 0 40px 0;
     }
   }
 

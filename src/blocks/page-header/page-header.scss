@@ -21,7 +21,11 @@
 
 .header-box {
   border-top: 1px solid #E5E8EC;
-  padding: 12px 0;
+  padding: 10px 0;
+
+  @media (min-width: $screen-lg) {
+    padding: 12px 0;
+  }
 
   .container {
     display: flex;
@@ -40,7 +44,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      width: 173px;
+      width: 145px;
     }
   }
   .call-box {

@@ -6,7 +6,11 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  padding-bottom: 65px;
+  padding-bottom: 25px;
+
+  @media (min-width: $screen-lg) {
+    padding-bottom: 65px;
+  }
 
   &__title {
     color: $font-color-title;
@@ -29,10 +33,15 @@
     @include col();
     @include col(lg, 6);
     
-    margin-bottom: 30px;
+    @media (min-width: $screen-lg) {
+      margin-bottom: 30px;
+    }
 
     .custom-dot-list {
-      margin-left: 30px;
+      
+      @media (min-width: $screen-lg) {
+        margin-left: 30px;
+      }
     }
   }
 }
