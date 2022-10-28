@@ -26,31 +26,45 @@ $( document ).ready(function() {
         }
     });
 
-    $('#mobile-nav').hcOffcanvasNav({
+    // $('#mobile-nav').hcOffcanvasNav({
+    //   customToggle: $('.m-menu-toggle'),
+    //   navTitle: 'Меню',
+    //   insertClose: false,
+    //   position: 'top'
+    // });
+
+    // $('#mobile-catalog').hcOffcanvasNav({
+    //   customToggle: $('.m-catalog-toggle'),
+    //   navTitle: 'Каталог оборудования',
+    //   insertClose: false,
+    //   position: 'top'
+    // });
+  
+    var mobileNav = new hcOffcanvasNav('#mobile-nav', {
       customToggle: $('.m-menu-toggle'),
       navTitle: 'Меню',
       insertClose: false,
       position: 'top'
     });
 
-    $('#mobile-catalog').hcOffcanvasNav({
+    var catalogNav = new hcOffcanvasNav('#mobile-catalog', {
       customToggle: $('.m-catalog-toggle'),
-      navTitle: 'Каталог оборудования',
+      navTitle: 'Меню',
       insertClose: false,
       position: 'top'
     });
     
-    // $navbarMobileNav.on('open', function () {
-    //   if ($navbarMobileCatalog.on('open')) {
-    //     $navbarMobileCatalog.on('toggle');
-    //   }
-    // })
-    // $navbarMobileCatalog.on('show.bs.collapse', function () {
-    //   if ($navbarMobileCatalog.hasClass('in')) {
-    //     $navbarMobileCatalog.insertAfter($(this)).collapse('hide');
-    //   }
-    // })
+    mobileNav.on("open", function() {
+      catalogNav.close();
+      $('body').addClass('hc-nav-open');
+      $('.page').addClass('hc-nav-yscroll');
+    });
     
+    catalogNav.on("open", function() {
+      mobileNav.close();
+      $('body').addClass('hc-nav-open');
+      $('.page').addClass('hc-nav-yscroll');
+    });
 
     $({blurRadius: 5}).animate({blurRadius: 0}, {
       duration: 1000,
