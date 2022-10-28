@@ -7,6 +7,7 @@
   $block-name:                &; // #{$block-name}__element
 
   display: flex;
+  text-decoration: none;
 
   @media (max-width: ($screen-lg - 1)) {
     display: block;
@@ -15,17 +16,20 @@
   &__img-wrap {
     flex: 0 0 50%;
     max-width: 50%;
-    padding-right: 40px;
     margin-bottom: 12px;
+    overflow: hidden;
+    border-radius: 8px;
+    align-self: flex-start;
 
     @media (max-width: ($screen-lg - 1)) {
-      padding-right: 0;
       max-width: 100%;
     }
   }
   &__img {
     width: 100%;
     display: block;
+    transform: scale(1);
+    transition: transform $transition-time;
   }
 
   &__content {
@@ -33,9 +37,13 @@
     max-width: 50%;
     display: flex;
     flex-direction: column;
+    padding-left: 40px;
+    margin-bottom: 12px;
 
     @media (max-width: ($screen-lg - 1)) {
       max-width: 100%;
+      padding-left: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -59,6 +67,7 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 4px;
+    transition: color $transition-time;
     
     @media (min-width: $screen-lg) {
       font-size: 24px;
@@ -94,6 +103,27 @@
 
       &:hover,
       &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    #{$block-name}__title {
+      color: #4697DD;
+    }
+
+    #{$block-name}__img-wrap {
+
+    }
+    #{$block-name}__img {
+      transform: scale(1.2);
+    }
+    #{$block-name}__more {
+      a {
+        color: $main-color;
         text-decoration: none;
       }
     }

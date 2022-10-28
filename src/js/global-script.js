@@ -11,13 +11,21 @@ $( document ).ready(function() {
         center: true
     });
 
-    // $('#mobile-nav').hcOffcanvasNav({
-    //   disableAt: 1024,
-    //   customToggle: $('.toggle'),
-    //   navTitle: 'Меню',
-    //   levelTitles: true,
-    //   levelTitleAsBack: true
-    // });
+    var shrinkHeader = 130;
+    var head = $('.header-box');
+    var heightHeader = head.height();
+    $(window).scroll(function() {
+      var scroll = $(this).scrollTop();
+      if ( scroll >= shrinkHeader ) {
+          $('body').css('paddingTop',heightHeader);
+          head.addClass('shrink');
+        }
+        else {
+            $('body').css('paddingTop',0);
+            head.removeClass('shrink');
+        }
+    });
+
     $('#mobile-nav').hcOffcanvasNav({
       customToggle: $('.m-menu-toggle'),
       navTitle: 'Меню',

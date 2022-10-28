@@ -17,6 +17,10 @@
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 4px;
+
+    &:hover {
+      color: $main-color;
+    }
   }
   &__link {
     color: $main-color;
@@ -26,6 +30,7 @@
 
     &:hover {
       text-decoration: none;
+      color: $main-color;
     }
   }
 }

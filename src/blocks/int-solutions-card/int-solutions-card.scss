@@ -14,6 +14,7 @@
     display: flex;
     padding: 20px 24px;
     margin-bottom: 15px;
+    text-decoration: none;
 
     @media (min-width: $screen-xxl) {
       padding: 48px 56px;
@@ -22,6 +23,25 @@
     @media (min-width: $screen-lg) {
       padding: 24px 32px;
       margin-bottom: 25px;
+    }
+
+    &:hover {
+
+      #{$block-name}__icon {
+
+        @media (min-width: $screen-lg) {
+          background: linear-gradient(267.08deg, rgba(255, 255, 255, 0.27) 0%, rgba(255, 255, 255, 0) 100%), #4697DD;
+          svg {
+            fill: #fff;
+          }
+        }
+      }
+
+      #{$block-name}__title {
+        @media (min-width: $screen-lg) {
+          color: $main-color;
+        }
+      }
     }
   }
 
@@ -58,15 +78,6 @@
         height: 34px;
         fill:#4697DD;
       }
-
-      &:hover,
-      &:focus {
-        background: linear-gradient(267.08deg, rgba(255, 255, 255, 0.27) 0%, rgba(255, 255, 255, 0) 100%), #4697DD;
-  
-        svg {
-          fill: #fff;
-        }
-      }
     }
 
     @media (min-width: $screen-xxl) {
@@ -87,6 +98,7 @@
 
   &__title {
     color: $font-color-title;
+    transition: color $transition-time;
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
@@ -99,19 +111,6 @@
     @media (max-width: $screen-lg) {
       font-size: 20px;
       line-height: 24px;
-    }
-
-    a {
-      text-decoration: none;
-      color: $font-color-title;
-      transition: color $transition-time;
-    }
-
-    &:hover,
-    &:focus  {
-      a {
-        color: $main-color;
-      }
     }
   }
   

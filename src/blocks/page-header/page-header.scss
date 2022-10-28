@@ -18,6 +18,16 @@
   }
 }
 
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 
 .header-box {
   border-top: 1px solid #E5E8EC;
@@ -64,6 +74,28 @@
   .btn--catalog {
     @media (max-width: ($screen-md - 1)) {
       display: none;
+    }
+  }
+
+  &.shrink {
+        
+    @media (min-width:$screen-lg) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #fff;
+      width: 100%;
+      margin: 0;
+      animation: slideInDown  1s 1 ease-in-out;
+      z-index: 10;
+      box-shadow: 0px 16px 48px rgba(25, 29, 37, 0.1);
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      .logo {
+        margin-right: 35px;
+        width: 220px;
+      }
     }
   }
 }
