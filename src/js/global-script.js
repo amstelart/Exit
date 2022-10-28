@@ -29,12 +29,47 @@ $( document ).ready(function() {
     $('#mobile-nav').hcOffcanvasNav({
       customToggle: $('.m-menu-toggle'),
       navTitle: 'Меню',
+      insertClose: false,
       position: 'top'
     });
+
     $('#mobile-catalog').hcOffcanvasNav({
       customToggle: $('.m-catalog-toggle'),
       navTitle: 'Каталог оборудования',
+      insertClose: false,
       position: 'top'
+    });
+    
+    // $navbarMobileNav.on('open', function () {
+    //   if ($navbarMobileCatalog.on('open')) {
+    //     $navbarMobileCatalog.on('toggle');
+    //   }
+    // })
+    // $navbarMobileCatalog.on('show.bs.collapse', function () {
+    //   if ($navbarMobileCatalog.hasClass('in')) {
+    //     $navbarMobileCatalog.insertAfter($(this)).collapse('hide');
+    //   }
+    // })
+    
+
+    $({blurRadius: 5}).animate({blurRadius: 0}, {
+      duration: 1000,
+      easing: 'swing',
+      step: function() {
+        $(".animatenumber").css({
+          "-webkit-filter": "blur("+this.blurRadius+"px)",
+          "filter": "blur("+this.blurRadius+"px)"
+        });
+      }
+    });
+    var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
+    $(".animatenumber").each(function() {
+      var tcount = $(this).data("count");
+      $(this).animateNumber({ number: tcount,
+        easing: 'easeInQuad',
+        "font-size": "24px",
+        numberStep: comma_separator_number_step},
+        1000);
     });
 });
 

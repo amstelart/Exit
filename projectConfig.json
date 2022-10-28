@@ -97,7 +97,8 @@
     "sitemap-page": [],
     "sitemap-box": [],
     "category-caption": [],
-    "hc-offcanvas-nav": []
+    "hc-offcanvas-nav": [],
+    "animatenumber": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
